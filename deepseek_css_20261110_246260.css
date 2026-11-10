@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-navy: #0a1f44;
+    --brand-blue: #2563eb;
+    --brand-purple: #7c3aed;
+    --brand-violet: #a855f7;
+    --brand-cyan: #06b6d4;
+    --brand-teal: #14b8a6;
+    --brand-turquoise: #2dd4bf;
+    --brand-yellow: #facc15;
+    --brand-orange: #f97316;
+    --brand-coral: #fb7185;
+    --brand-pink: #ec4899;
+  }
+  body {
+    @apply antialiased;
+    font-family: 'Inter', 'Noto Sans Sinhala', system-ui, sans-serif;
+  }
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #0a1f44 0%, #2563eb 30%, #7c3aed 60%, #ec4899 100%);
+}
+.gradient-card-1 { background: linear-gradient(135deg, #06b6d4, #14b8a6); }
+.gradient-card-2 { background: linear-gradient(135deg, #7c3aed, #ec4899); }
+.gradient-card-3 { background: linear-gradient(135deg, #f97316, #facc15); }
+.gradient-btn {
+  background: linear-gradient(135deg, #2563eb, #7c3aed, #ec4899);
+  transition: filter 0.2s;
+}
+.gradient-btn:hover { filter: brightness(1.1); }
+
+.sinhala { font-family: 'Noto Sans Sinhala', sans-serif; }

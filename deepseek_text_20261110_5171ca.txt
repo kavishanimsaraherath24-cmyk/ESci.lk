@@ -1,0 +1,67 @@
+esci-lk/
+├── .env.local.example
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+├── tailwind.config.ts
+├── postcss.config.mjs
+├── middleware.ts
+├── supabase/
+│   └── migrations/
+│       └── 001_initial_schema.sql
+├── src/
+│   ├── i18n/
+│   │   ├── routing.ts
+│   │   ├── request.ts
+│   │   └── navigation.ts
+│   ├── lib/
+│   │   ├── supabase/
+│   │   │   ├── client.ts
+│   │   │   ├── server.ts
+│   │   │   ├── middleware.ts
+│   │   │   └── admin.ts
+│   │   ├── utils.ts
+│   │   └── validators.ts
+│   ├── messages/
+│   │   ├── en.json
+│   │   └── si-LK.json
+│   ├── components/
+│   │   ├── ui/           (shadcn components)
+│   │   ├── Navbar.tsx
+│   │   ├── Footer.tsx
+│   │   ├── LocaleSwitcher.tsx
+│   │   └── ...
+│   └── app/
+│       ├── layout.tsx
+│       ├── globals.css
+│       ├── [locale]/
+│       │   ├── layout.tsx
+│       │   ├── page.tsx                  (homepage)
+│       │   ├── auth/
+│       │   │   ├── sign-in/page.tsx
+│       │   │   ├── register/page.tsx
+│       │   │   ├── forgot-password/page.tsx
+│       │   │   ├── reset-password/page.tsx
+│       │   │   └── confirm/route.ts
+│       │   ├── dashboard/
+│       │   │   ├── layout.tsx
+│       │   │   ├── page.tsx
+│       │   │   ├── profile/page.tsx
+│       │   │   ├── classes/page.tsx
+│       │   │   ├── payments/
+│       │   │   │   ├── page.tsx
+│       │   │   │   └── new/page.tsx
+│       │   │   ├── resources/page.tsx
+│       │   │   └── announcements/page.tsx
+│       │   └── admin/
+│       │       ├── layout.tsx
+│       │       ├── page.tsx
+│       │       ├── students/page.tsx
+│       │       ├── classes/page.tsx
+│       │       ├── payments/page.tsx
+│       │       ├── announcements/page.tsx
+│       │       ├── resources/page.tsx
+│       │       ├── messages/page.tsx
+│       │       └── settings/page.tsx
+│       └── auth/
+│           └── sign-out/route.ts
